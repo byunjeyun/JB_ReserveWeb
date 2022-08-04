@@ -73,6 +73,11 @@ public class WebController {
 		return "register_ok";
 		}
 	
+	@RequestMapping(value="/location")
+	public String location() {
+		
+		return "location";
+		}
 
 }
 	

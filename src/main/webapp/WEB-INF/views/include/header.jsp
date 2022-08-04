@@ -44,11 +44,11 @@
 			</td>
 			
 			<td width="10%" class="" align="center">
-				<a href="home" >위치안내</a>
+				<a href="location" >위치안내</a>
 			</td>
 			
 			<td width="10%" class="" align="center">
-				<a href="home" >게시판</a>
+				<a href="" >게시판</a>
 			</td>
 			
 			<td width="10%" class="">&nbsp;</td>			
