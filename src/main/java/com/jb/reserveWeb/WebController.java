@@ -79,5 +79,16 @@ public class WebController {
 		return "location";
 		}
 
+	@RequestMapping(value="/user_board")
+	public String user_board() {
+		
+		return "user_board";
+		}
+	
+	@RequestMapping(value="/java2")
+	public String java2() {
+		
+		return "java2";
+		}
 }
 	

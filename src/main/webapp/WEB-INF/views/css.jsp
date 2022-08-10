@@ -6,13 +6,22 @@
 <meta charset="UTF-8">
 <title>Css룸 소개</title>
 <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/header.css?after">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet">
+ 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+
 </head>
 <body>
 
 <%@ include file="include/header.jsp" %>
 <center>
 
-<h2>Css room</h2>
+<h2>Css room 안내</h2>
 <hr>
 <table width="1000">
 	<tr>
@@ -53,7 +62,7 @@
 			기준인원 
 		</td>
 		<td>
-			기준 2인 / 최대 3인(추가요금 : 성인 20000원 , 아동 10000원)
+			기준 6인 / 최대 8인(추가요금 : 성인 20000원 , 아동 10000원)
 		</td>
 	</tr>	
 	
@@ -82,15 +91,32 @@
 		<td>
 			<table width="1000">
 				<tr>
-					<td><a href="${pageContext.request.contextPath }/resources/img/css1.jpg" target="_blank"><img align="middle" alt="" src="${pageContext.request.contextPath }/resources/img/css1.jpg" width="500" height="300"></a></td>
-					<td><a href="${pageContext.request.contextPath }/resources/img/css2.jpg" target="_blank"><img align="middle" alt="" src="${pageContext.request.contextPath }/resources/img/css2.jpg" width="500" height="300"></a></td>
-					 
+					<td>
+			            <a href="${pageContext.request.contextPath }/resources/img/css1.jpg" data-toggle="lightbox" data-gallery="example-gallery" >
+							<img src="${pageContext.request.contextPath }/resources/img/css1.jpg" class="" width="500" height="300">
+		            	</a>
 					</td>
+					
+					<td>
+			            <a href="${pageContext.request.contextPath }/resources/img/css2.jpg" width="500" height="300" data-toggle="lightbox" data-gallery="example-gallery">
+							<img src="${pageContext.request.contextPath }/resources/img/css2.jpg" class="" width="500" height="300">
+		            	</a>
+					</td>
+					
 					
 				</tr>
 				<tr>
-					<td><a href="${pageContext.request.contextPath }/resources/img/css2.png" target="_blank"><img align="middle" alt="" src="${pageContext.request.contextPath }/resources/img/css2.jpg" width="500" height="300"></a></td>
-					<td><a href="${pageContext.request.contextPath }/resources/img/css1.png" target="_blank"><img align="middle" alt="" src="${pageContext.request.contextPath }/resources/img/css1.jpg" width="500" height="300"></a></td>
+					<td>
+			            <a href="${pageContext.request.contextPath }/resources/img/css2.jpg" width="500" height="300" data-toggle="lightbox" data-gallery="example-gallery">
+							<img src="${pageContext.request.contextPath }/resources/img/css2.jpg" class="" width="500" height="300">
+		            	</a>
+					</td>
+					
+					<td>
+			            <a href="${pageContext.request.contextPath }/resources/img/css1.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="" width="500" height="300">
+						<img src="${pageContext.request.contextPath }/resources/img/css1.jpg" class="" width="500" height="300">
+		            	</a>
+					</td>
 				</tr>
 				<tr>
 				<td>&nbsp; </td>
@@ -110,6 +136,7 @@
 					<td width="33%" align="center"><a href="java"><img align="middle" alt="" src="${pageContext.request.contextPath }/resources/img/java2.jpg" width="300" height="200"></a></td>
 					<td width="33%" align="center"><a href="python"><img align="middle" alt="" src="${pageContext.request.contextPath }/resources/img/python2.jpg" width="300" height="200"></a></td>
 					<td width="33%" align="center"><a href="oracle"><img align="middle" alt="" src="${pageContext.request.contextPath }/resources/img/ora2.png" width="300" height="200"></a></td>
+											
 				</tr>
 				<tr>
 					<td align="center"><a href="java">java room</a>
@@ -117,13 +144,19 @@
 					<td align="center"><a href="oracle">oracle room</a>
 				</tr>
 				
-				
-				
 			</table>
 		</td>
 	</tr>
 </table>
 
 </center>
+
+<script>
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});
+</script>
+
 </body>
 </html>

@@ -79,6 +79,6 @@ calStr+="'>" // 링크설정
 
 		<script type="text/javascript"> showCalendar(nowd,nowm,nowy);</script>
 		<center><br />예약을 원하는 날짜를 선택해 주세요.<br />
-		(클릭시 해당 날짜의 예약 현황 페이지로 이동합니다.)<br /><a href="main">홈으로 이동</a></center>
+		(클릭시 해당 날짜의 예약 현황 페이지로 이동합니다.)<br /><a href="../main.jsp">홈으로 이동</a></center>
 </body>
 </html>
