@@ -52,8 +52,7 @@ public class CalendarController {
 		int index = 7-dateList.size()%7;
 		
 		if(dateList.size()%7!=0){
-			// i의 범위를 날짜 길이로 하면 될꺼 같은데 날짜가 어떻게 나오는지 모르겠음
-			// for (int i = 0; i < today_info.get("start")-2; i++) {
+			
 			for (int i = 0; i < index; i++) {
 				calendarData= new DateData(null, null, null, null);
 				dateList.add(calendarData);

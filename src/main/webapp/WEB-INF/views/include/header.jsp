@@ -13,12 +13,12 @@
 			<td width="10%" class="">&nbsp;</td>
 			
 			<td width="10%" class="" align="center">		
-				<a href="main" >HOME</a>
+				<a href="main" >Home</a>
 			</td>
 			
 			<td width="10%" class="" align="center">
 				<div class="dropdown">
-				  <button class="dropbtn">객실소개</button>
+				  <button class="dropbtn">Rooms</button>
 				  <div class="dropdown-content">
 				  <a href="java">Java room</a>
 				  <a href="python">Python room</a>
@@ -29,12 +29,12 @@
 			</td>
 								
 			<td width="10%" class="" align="center">
-				<a href="calendar" >객실예약</a>
+				<a href="calendar" >Reservation</a>
 			</td>
 			
 			<td width="10%" class="" align="center">
 				<div class="dropdown">
-				  <button class="dropbtn">추가프로그램</button>
+				  <button class="dropbtn">Special</button>
 				  <div class="dropdown-content">
 				  <a href="java">BBQ</a>
 				  <a href="python">캠프파이어</a>
@@ -44,11 +44,18 @@
 			</td>
 			
 			<td width="10%" class="" align="center">
-				<a href="location" >위치안내</a>
+				<a href="location" >Location</a>
 			</td>
 			
 			<td width="10%" class="" align="center">
-				<a href="" >게시판</a>
+			<div class="dropdown">
+				  <button class="dropbtn">Board</button>
+				  <div class="dropdown-content">
+				  <a href="review">Review</a>
+				  <a href="qna_input">Q&A</a>
+				  </div>
+				</div>	
+
 			</td>
 			
 			<td width="10%" class="">&nbsp;</td>			
