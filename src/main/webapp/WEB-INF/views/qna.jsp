@@ -16,7 +16,7 @@
 <h2>Q&A 게시판</h2>
 
 	<hr>
-	<table width="700" color="#999" cellpadding="0" cellspacing="0" border="1" style="border-color:#eee"  >
+	<table width="700" color="#999" cellpadding="0" cellspacing="0" border="" style="border-color:#eee"  >
 		<tr bgcolor="#555"  align="center" height="30" style="color:#ccc">
 			<td>No</td>
 			<td>NAME</td>
