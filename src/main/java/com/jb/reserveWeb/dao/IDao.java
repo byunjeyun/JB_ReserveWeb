@@ -1,8 +1,12 @@
 package com.jb.reserveWeb.dao;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
-import com.jb.reserveWeb.dto.BoardDto;
-import com.jb.reserveWeb.dto.QboardDto;
+
+import com.jb.reserveWeb.dto.*;
+
+
 
 
 
@@ -20,4 +24,15 @@ public interface IDao {
 	public QboardDto viewDao(String qnum);
 	public void deleteDao(String qnum);
 	
+	//reserve_table
+	public void reservationInputDao(String name, String room_name, LocalDate startDate, LocalDate endDate, Integer rguest,String  bbq_yn,String campfire_yn );
+	
+	
+	//calendar_reservation_table
+	public ArrayList<reservationDto> reservationDao();
+	
+	//adminDao 관리자로그인
+	public int checkIdDao(String id);
+	public int checkPwDao(String id, String pw);
+	public AdminDto loginInfoDao(String id);
 }

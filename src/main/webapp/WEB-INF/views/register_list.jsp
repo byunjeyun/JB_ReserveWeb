@@ -143,5 +143,7 @@ th, td {
 		if(con != null)
 			con.close();
 	%>
+	
+<%@ include file="include/footer.jsp" %>
 </body>
 </html>

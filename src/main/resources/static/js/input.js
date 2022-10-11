@@ -67,9 +67,9 @@ function qnaCheck() {
 		return;		
 	}
 	
-	else{
-		alert("문의내용이 등록되었습니다. 확인 후 답변 드리겠습니다.");
-		}	
+//	else{
+//		alert("문의내용이 등록되었습니다. 확인 후 답변 드리겠습니다.");
+//		}	
 	document.qna_frm.submit();
 }	
 	

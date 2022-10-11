@@ -157,6 +157,6 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
     $(this).ekkoLightbox();
 });
 </script>
-
+<%@ include file="include/footer.jsp" %>
 </body>
 </html>

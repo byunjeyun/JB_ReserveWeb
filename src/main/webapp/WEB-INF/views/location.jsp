@@ -28,6 +28,6 @@
 
 <div float="left"><a href="oracle">방 보기</a></div>
 <div float="left"><a href="oracle">방 보기</a></div>
-
+</center>
+<%@ include file="include/footer.jsp" %>
 </body>
-</html>
